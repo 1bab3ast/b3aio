@@ -1,4 +1,4 @@
-const AvatarHtml = require("../functions/avatar/avatarHtml");
+import AvatarHtml from "../functions/avatar/avatarHtml";
 
 (async function() {
   // let url = "https://fixa11y.com/"; // svg

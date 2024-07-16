@@ -1,8 +1,8 @@
-const fetch = require("node-fetch");
-const cheerio = require("cheerio");
-const EleventyImage = require("@11ty/eleventy-img");
-const EleventyFetch = require("@11ty/eleventy-fetch");
-const icoToPng = require('ico-to-png')
+import fetch from "node-fetch";
+import cheerio from "cheerio";
+import EleventyImage from "@11ty/eleventy-img";
+import EleventyFetch from "@11ty/eleventy-fetch";
+import icoToPng from "ico-to-png";
 
 class AvatarHtml {
   constructor(url) {
@@ -155,4 +155,4 @@ class AvatarHtml {
   }
 }
 
-module.exports = AvatarHtml;
+export default AvatarHtml;

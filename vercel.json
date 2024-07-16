@@ -1,0 +1,13 @@
+{
+	"functions": {
+		"api/avatar.js": {
+			"includeFiles": ""
+		}
+	},
+	"rewrites": [
+		{ "source": "/", "destination": "/api/avatar/" },
+		{ "source": "/:path*", "destination": "/api/avatar/" },
+		{ "source": "/:path/", "destination": "/api/avatar/" }
+	],
+	"trailingSlash": true
+}
