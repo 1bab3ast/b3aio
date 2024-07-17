@@ -25,7 +25,7 @@
   "homepage": "https://github.com/11ty/indieweb-avatar#readme",
   "dependencies": {
     "@11ty/eleventy-fetch": "^4.0.1",
-    "@11ty/eleventy-img": "^4.0.2",
+    "@11ty/eleventy-img": "5.0.0-beta.6",
     "cheerio": "^1.0.0-rc.12",
     "ico-to-png": "^0.2.1",
     "node-fetch": "^3.3.2"

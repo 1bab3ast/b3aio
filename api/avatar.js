@@ -58,6 +58,7 @@ export async function GET(request, context) {
     let stat = stats[format][0];
 
     return new Response(stat.buffer, {
+      status: 200,
       headers: {
         "content-type": stat.sourceType,
         "cache-control": `public, s-maxage=${ONE_WEEK}, stale-while-revalidate=${ONE_DAY}`
