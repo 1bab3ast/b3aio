@@ -141,8 +141,8 @@ class AvatarHtml {
 
   async optimizeAvatar(sharpInput, width, imageFormat) {
     // normalize format
-    if(imageFormat && imageFormat === "svg+xml") {
-      imageFormat = "svg";
+    if(imageFormat && (imageFormat === "svg+xml" || imageFormat === "svg")) {
+      imageFormat = "png";
     }
 
     let stats = await EleventyImage(sharpInput, {

@@ -17,6 +17,8 @@ A runtime service to extract avatar images from:
 
 All `rel` lookups match against attribute values that are space separated lists.
 
+Update July 22, 2024: Supports `svg` favicons but converts to `png` for performance reasons (some folks had _huge_ SVG favicons).
+
 ## Usage
 
 URLs have the formats:
@@ -27,13 +29,3 @@ URLs have the formats:
 
 * `url` must be URI encoded.
 
-<!--
-### Advanced: Manual Cache Busting
-
-If the screenshots aren’t updating at a high enough frequency you can pass in your own cache busting key using an underscore prefix `_` after your URL.
-
-This can be any arbitrary string tied to your unique build, here’s an example that uses the date to at-most request a new version every day.:
-
-```
-/:url/_20210802/
-``` -->
